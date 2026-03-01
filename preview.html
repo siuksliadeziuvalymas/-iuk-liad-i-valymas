@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BinCare – Šiukšliadėžių Valymas</title>
+<style>
+  /* Reset & pagrindiniai stiliai */
+  * {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', sans-serif;}
+  body {background:#f4f4f9; color:#222;}
+  a {text-decoration:none; color:inherit;}
+  h1,h2,h3 {margin-bottom:10px;}
+  section {padding:80px 20px;}
+  .container {max-width:1200px; margin:0 auto;}
+
+  /* Hero sekcija */
+  #hero {
+    background: linear-gradient(135deg,#2b7a78,#3aafa9);
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+  }
+  #hero h1 {font-size:3rem; margin-bottom:20px;}
+  #hero p {font-size:1.3rem; margin-bottom:30px;}
+  .btn {background:#fe7f2d; color:#fff; padding:15px 30px; border-radius:50px; font-weight:bold; transition:0.3s;}
+  .btn:hover {background:#f25f00;}
+
+  /* Services */
+  #services {background:#fff; text-align:center;}
+  .services-grid {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+  .service-card {background:#f8f8f8; border-radius:12px; padding:30px; width:250px; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+  .service-card h3 {margin-bottom:10px;}
+  .service-card .price {font-size:1.5rem; font-weight:bold; color:#2b7a78;}
+
+  /* About & How we work */
+  #about, #how {background:#e6f2f1; text-align:center;}
+  .steps {display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:30px;}
+  .step {background:#fff; border-radius:12px; padding:20px; width:200px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+
+  /* Contact */
+  #contact {background:#fff; text-align:center;}
+  form {max-width:500px; margin:0 auto; display:flex; flex-direction:column; gap:15px;}
+  input, textarea {padding:12px; border-radius:8px; border:1px solid #ccc; font-size:1rem;}
+  button {padding:15px; border:none; border-radius:50px; background:#2b7a78; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s;}
+  button:hover {background:#3aafa9;}
+  
+  /* Footer */
+  footer {text-align:center; padding:20px; background:#2b7a78; color:#fff;}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section id="hero">
+  <h1>Švarios šiukšliadėžės. Laiku.</h1>
+  <p>Profesionali BinCare komanda pasirūpins jūsų šiukšliadėžėmis.</p>
+  <a href="#contact" class="btn">Užsisakyti dabar</a>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <h2>Mūsų paslaugos</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Šiukšliadėžių valymas</h3>
+        <p>Profesionalus vienos šiukšliadėžės valymas</p>
+        <span class="price">7 € / vienetui</span>
+      </div>
+      <div class="service-card">
+        <h3>Dezinfekcija</h3>
+        <p>Saugus ir higieniškas valymas</p>
+        <span class="price">+ papildoma kaina pagal užsakymą</span>
+      </div>
+      <div class="service-card">
+        <h3>Reguliarus prižiūrėjimas</h3>
+        <p>Tvarkingas grafikas pagal jūsų poreikį</p>
+        <span class="price">Pagal užsakymą</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us -->
+<section id="about">
+  <div class="container">
+    <h2>Apie mus</h2>
+    <p>BinCare rūpinasi, kad jūsų šiukšliadėžės visada būtų švarios. Profesionali komanda, moderni įranga, patikimi klientai.</p>
+  </div>
+</section>
+
+<!-- How we work -->
+<section id="how">
+  <div class="container">
+    <h2>Kaip mes dirbame</h2>
+    <div class="steps">
+      <div class="step"><h3>1. Užsakymas</h3><p>Palikite užklausą formoje arba paskambinkite.</p></div>
+      <div class="step"><h3>2. Tvarkymas</h3><p>Mes atvykstame ir tvarkingai išvalome.</p></div>
+      <div class="step"><h3>3. Patikrinimas</h3><p>Įsitikiname, kad viskas švaru ir tvarkinga.</p></div>
+      <div class="step"><h3>4. Jūsų patenkintas klientas</h3><p>Švara ir komfortas garantuoti!</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <h2>Susisiekite / Užsakymas</h2>
+    <form action="https://formspree.io/f/{TAVO_FORM_ID}" method="POST">
+      <input type="text" name="name" placeholder="Vardas" required>
+      <input type="email" name="email" placeholder="El. paštas" required>
+      <input type="text" name="address" placeholder="Adresas" required>
+      <textarea name="message" placeholder="Komentaras / pastabos"></textarea>
+      <button type="submit">Siųsti užsakymą</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 BinCare. Visi teisės saugomos.</p>
+</footer>
+
+</body>
+</html>
